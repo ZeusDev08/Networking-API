@@ -5,6 +5,14 @@ Esta API es una API bastante especial, he añadido una calculadora IP que no est
 3. IP to DOMAIN Resolver
 Entre otras cosas.
 
+# INSTALACIÓN DE LA API
+Para instalar esta API ejecutaremos el siguiente comando en nuestra consola:
+
+```
+wget https://github.com/ZeusDev08/Networking-API.git
+```
+
+
 # Preparación del entorno
 Bien, para esta API necesitamos un entorno en el que crearemos un archivo .env en el que pondremos nuestra AUTH_TOKEN de turso.tech
 
