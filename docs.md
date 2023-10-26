@@ -9,7 +9,7 @@ Entre otras cosas.
 Para instalar esta API ejecutaremos el siguiente comando en nuestra consola:
 
 ```
-wget https://github.com/ZeusDev08/Networking-API.git
+git clone https://github.com/ZeusDev08/Networking-API.git
 ```
 
 
@@ -21,3 +21,13 @@ El archivo debería quedar como esto
 ```
 AUTH_TOKEN = "TU_TOKEN"
 ```
+
+# INSTALACIÓN REQUERIMIENTOS
+
+Para instalar las librerías necesarias para ejecutar esta API usaremos el comando:
+
+```
+pip install -r requirements.txt
+```
+
+
