@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualización Automática</title>
+</head>
+<body>
+    <!--Creación de los titulos con el ID de sent y recv para mostrar los valores-->
+    <h1>Bytes Enviados: <span id="sent"></span></h1>
+    <h1>Bytes Recibidos: <span id="recv"></span></h1>
+
+    <script>
+        // creación del evento
+        const eventSource = new EventSource('/api/v3/monitoring/network/bytes-sent-recv');
+
+        // detección del mensaje y creación de los valores de la API sent y recv
+        eventSource.onmessage = (event) => {
+            const data = JSON.parse(event.data);
+            document.getElementById('sent').textContent = data.bytes_sent;
+            document.getElementById('recv').textContent = data.bytes_recv;
+        };
+        // en caso de error cerrar el evento y printear el error en la consola del navegador.
+        eventSource.onerror = (error) => {
+            console.error('EventSource failed:', error);
+            eventSource.close();
+        };
+    </script>
+</body>
+</html>

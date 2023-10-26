@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Archivos</title>
+</head>
+<body>
+    <ul>
+        {% for file in files %}
+            <li>
+                {{ file.name }} - 
+                <a href="{{ file.download_link }}">Descargar</a> - 
+                <a href="{{ file.view_link }}">Ver</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
