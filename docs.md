@@ -30,4 +30,18 @@ Para instalar las librerías necesarias para ejecutar esta API usaremos el coman
 pip install -r requirements.txt
 ```
 
+# EXPLICACIÓN DETALLADA DE TODOS LOS ENDPOINTS
+Ahora explicaré que hace cada endpoint de mi API. Cabe destacar que requiere registrarse y loguearse dentro de la API para usar algunos endpoints.
+
+## / Nada más entras devuelve un mensaje
+El endpoint / es la raíz de toda la API es por así decirlo Home
+
+## /api/v1/theory
+Este endpoint requiere de login y token una vez obtenidos (La explicación de como obtener una token está mas abajo), este endpoint devuelve los archivos con una estructura HTML con 2 links descarga y ver:
+
+![imatge](https://github.com/ZeusDev08/Networking-API/assets/100066830/3cc04ddf-3c60-44ae-9ff6-485b99387aa5)
+
+
+
+
 
